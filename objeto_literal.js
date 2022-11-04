@@ -11,11 +11,16 @@ var curiosidades = [
     { titulo: "Contando sem parar", conteudo: "Chuck Norris contou até o infinito. Duas vezes." }
 ];
 
+//Quantidade de objetos da coleção
 var tamanho_colecao = curiosidades.length;
+
+//Funções math.random (número entre 0 e <1) + math.floor (arrendonda número p baixo, transformando em inteiro)
 var numero_sorteado = Math.floor(Math.random() * tamanho_colecao);
 
+//Será armazedo um dos objetos da coleção
 var curiosidade_escolhida = curiosidades[numero_sorteado];
 
+//Separação dos dados para posterior apresentação
 var titulo_curiosidade = curiosidade_escolhida.titulo;
 var conteudo_curiosidade = curiosidade_escolhida.conteudo;
 
